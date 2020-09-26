@@ -9,7 +9,26 @@
     <body onload="refreshWeeks()">
         <h1>WDD 330 Portfolio</h1>
         <h2>Week02</h1>
-        <ol id="weeks"></ol>  
+
+        <h3>Notes:</h3>
+        <ol id="weeks">
+            <li>When using the delete operator to remove an item from an array, undefined will still be in the array's position. Removing an item from an array with splice is probably the best way to remove an item from an array by not specifying any values to add. </li>
+            <li>Multidimensional Arrays = Multidimensional arrays are good to use when creating coordinate systems. </li> 
+            <li>Ternary Operator = condition ? (//code to run if condition is true) : (// code to run if condition is false).</li>
+            <li>"Keep Your Code Dry" DRY = Don't Repeat Yourself. Avoid duplication so you don't have to keep multiple code up to date and in sync.</li>
+            <li>Placing a function within a variable turns the variable into the result of the function. Example = function howdy(), return 'Howdy World' will make const message = howdy() will store Howdy World in the variable message.</li>
+            <li>I've never really thought about placing a function within a variable, it's interesting to see the console.log with in the function parameter, this will make the variable global and may cause programs to do some funny things and be unpredictable.</li>
+            <li>To invoke a function that has been placed in a variable, you need to put parentheses after the variable name.</li>
+        </ol>
+        
+        <h3>Questions:</h3>
+        <ol>
+            <li>Not working with sets as of yet, what real world application would you use sets on? It appears it's good for getting rid of duplicates.</li>
+        </ol>
+        
+        <h3>W02 Team Activity</h3>
+        <a href="team_activity.html">W02 Team Activity</a>
+
         <script src="js/main.js"></script>    
     </body>  
 </html>
