@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W04 Team Activity</title>
+    <link rel="stylesheet" href="css/team_activity.css">
+  </head>
+  <body onload="ticTacToe()">
+ 
+    <div class="flexContainer">
+        <div class="flexBox one"></div>
+        <div class="flexBox two"></div>
+        <div class="flexBox three"></div>
+    </div>
+
+    <div class="flexContainer">
+        <div class="flexBox four"></div>
+        <div class="flexBox five"></div>
+        <div class="flexBox six"></div>
+    </div>
+
+    <div class="flexContainer">
+        <div class="flexBox seven"></div>
+        <div class="flexBox eight"></div>
+        <div class="flexBox nine"></div>
+    </div>
+    
+    <button onclick="reset()">Reset</button>
+
+    <script>
+      let choices = []
+        async function draw() {
+          console.log(choices.length);
+        let a = await isEven(choices.length);
+        
+        if (!this.innerHTML) {
+          choices.push(choices.length + 1);
+        if (a) {
+          this.innerHTML = "X";
+        } 
+
+        else {
+          this.innerHTML= "O";
+        }
+      }
+    }
+    
+        async function isEven(value) {
+	      if (value%2 == 0)
+		    return true;
+      	else
+		    return false;
+}
+
+
+      function ticTacToe() {
+        let elements = document.getElementsByClassName("flexBox");
+
+        for (var i = 0; i < elements.length; i++) {
+  
+        let e = elements[i];
+       
+        e.addEventListener('touchend', draw, false);
+      
+    }
+
+      }
+
+      function reset() {
+        let choices = [];
+        let elements = document.getElementsByClassName("flexBox");
+        for (let b = 0; b < elements.length; b++) {
+          elements[b].innerHTML = "";
+        }
+      }
+    </script> 
+  </body>
+</html>
