@@ -10,21 +10,81 @@
         <h1>WDD 330 Portfolio</h1>
         <h2>Week05</h1>
         <ol id="weeks"> 
-        <li>Reset buttons are generally considered poor for usability, as they are too easy to click and then wipe out all the data that’s been entered. So think very carefully before using one in a form.</li>
-        <li>The parentheses are not required when instantiating a new object using a constructor function.</li>
+            <li>An exception is an error that produces a return value that can then be used by the program to deal with the error.<br> unicorn(); << ReferenceError: unicorn is not defined</li>
+            <li>A stack trace will work backwards from the point at which the error occurred to identify the original function or method that started the sequence.<br>
+                function three(){ unicorn(); }<br>
+                function two(){ three(); }<br>
+                function one(){ two(); }<br>
+                one();<br>
+                << index.html:13 Uncaught ReferenceError: unicorn is not defined<br>
+                at three (index.html:13)<br>
+                at two (index.html:17)<br>
+                at one (index.html:21)<br>
+                at index.html:24`<br>
+            </li>
+            <li>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash. This means the program will continue to run after a warning. </li>
+            <li>ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features. This is due to the fact that strict mode considers coding practices that were previously accepted as just being 'poor style' as actual errors. 'use strict';</li>
+            <li>In fact, the recommended way to invoke strict mode is to place all your code into a self-invoking function (covered in more detail in Chapter 12), like so: (function() {
+                'use strict';
+                // All your code would go inside this function
+                }());</li>
+                <li>Linting tools such asJS Lint,JS Hint,andES Lintcan be used to test the quality of JavaScript code, beyond simply using strict mode. </li>
+                <li>The most basic form of debugging is to use the alert() method to show a dialog at certain points in the code. Because alert() stops a program from running until OK is clicked, it allows us to effectively put breakpoints in the code that let us check the value of variables at that point to see if they’re what we expect them to be.<br> function amIOldEnough(age){
+                    if (age = 12) {<br>
+                        alert(age);<br>
+                        return 'No, sorry.';<br>
+                    } else if (age < 18) {<br>
+                        return 'Only if you are accompanied by an adult.';<br>
+                    }<br>
+                    else {<br>
+                        return 'Yep, come on in!';<br>
+                    }<br>
+                    }</li>
+                    <li>We've already seen and used the console.log() method. This can be used to log the value of variables at different stages of the program, although it will not actually stop the execution of the program in the same way as alert() does. For example, we could add some console.log() statements in the amIOldEnough() function, to log the position in the function as well as the value of the age variable:<br>function amIOldEnough(age){
+                        console.log(age);<br>
+                            if (age < 12) {<br>
+                            console.log(`In the if with ${age}`);<br>
+                            return 'No, sorry.';<br>
+                            } else if (age < 18) {<br>
+                            console.log(`In the else-if with ${age}`);<br>
+                            return 'Only if you are accompanied by an adult.';<br>
+                            } else {<br>
+                            console.log(`In the else with ${age}`);<br>
+                            return 'Yep, come on in!';<br>
+                        }<br>
+                    }</li>
+                    <li>function amIOldEnough(age){<br>
+                        debugger;<br>
+                            if (age < 12) {<br>
+                            debugger;<br>
+                            return 'No, sorry.';<br>
+                            } else if (age < 18) {<br>
+                            debugger;<br>
+                            return 'Only if you are accompanied by an adult.';<br>
+                            } else {<br>
+                            debugger;<br>
+                            return 'Yep, come on in!';<br>
+                        }<br>
+                    }<br>
+                    amIOldEnough(16);<br></li>
+                    <li>function itSquareRoots4() {<br>
+                        return squareRoot(4) === 2;<br>
+                    }<br>Here we’re comparing the result of squareRoot(4) with the number 2 . This will return true if our function works as expected, which it does:
+                    itSquareRoots4();<br>
+                    << true<br></li>
     </ol>
     
     <h3>Questions:</h3>
     <ol>
-        <li></li>
+        <li>Isn't the debugger command and the developer tools creating break points basically one and the same? They seem to basically do the same thing. </li>
     </ol>
 
         <h3>W05 Projects</h3>
-        <a href="search.html">Click here for W04 search project.</a>
-        <a href="hero.html">Click here for W04 hero project.</a>
+        <a href=""></a>Click here for W05 search project.</a>
+        
 
         <h3>W05 Team Activity</h3>
-        <a href="team_activity.html">Click Here for W04 Team Activity</a>
+        <a href="team_activity.html">Click Here for W05 Team Activity</a>
         <script src="js/main.js"></script>    
     </body>  
 </html>
