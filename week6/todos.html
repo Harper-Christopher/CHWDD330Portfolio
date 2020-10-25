@@ -8,17 +8,28 @@
     </head>
     <body>
         <main">
+          <div class="todoBox">
             <h1>Todo List</h1>
           
-          <div id=(todos)></div>
+            <div class="listBox">
+              <ul id="todoLists"></ul>
+            
+            <div class="filter">
+            <button class="list" id="all">All</button>
+            <button class="list" id="uncompleted">Active</button>
+            <button class="list" id="completed">Completed</button>
+            </div>
+            </div><br>
 
-            <form name="newform">
-              <label for="newtask">Add to the todo list</label>
-              <input type="text" name="newtask" id="newtask">
-              <button type="submit">+</button>
+            <form name="todoList">
+              <label for=""></label>
+              <input type="text" id="todoList" placeholder="Enter an item to your list">
+              <button type="button" id="addButton">+</button>
             </form>
+
           </main>
         
-          <script src="js/main.js"></script>  
+          <script src="js/ToDo.js"></script>  
     </body>  
 </html>
+
