@@ -16,11 +16,32 @@
     
     <h3>Questions:</h3>
     <ol>
-        <li></li>
+        <li>200ms is generally considered the optimum time for a transition: anything slower will make the website seem slow, drawing generally unwanted attention to what was supposed to be a subtle effect. Anything faster may be too subtle. (transition-duration: 0.2s;)</li>
+        <li>The text in between the canvas tags will only be shown if the canvas element is not supported by the visitor’s browser.</li>
+        <li>Since drawing on the canvas is done using JavaScript, we’ll need a way to grab the element from the DOM. We’ll do so by giving our canvas an ID:</li>
+        <li>The canvas element takes both a width and height attribute, which must also be set.</li>
+        <li> data contains information about the pixels in the ImageData object in the form of an array. Each pixel on the canvas will have four values in the data array, which correspond to that pixel’s R, G, B, and A values. A stands for Alpha, a measure of the element’s transparency, with 0 meaning the element is totally transparent, 1 meaning it’s totally opaque, and 0.5 meaning it’s 50% transparent</li>
+        <li>The draw function, which is a custom function that we’ll define, will be called when the play event fires. It will be passed the video , context , and canvas objects. We’re using an anonymous function here instead of a normal named function because we’re unable to actually pass parameters to named functions when declaring them as event handlers without wrapping them in an another function.</li>
+        <li>A major downside of canvas in its current form is its lack of accessibility. The canvas doesn’t create a DOM node, is not a text-based format, and is thus essentially invisible to tools such as screen readers. For example, even though we wrote text to the canvas in our last example, that text is essentially no more than a bunch of pixels and is therefore inaccessible―it’s just like an image that contains text.</li>
+        <li>XML stands for eXtensible Markup Language. Like HTML, it’s a markup metalanguage. In plain English, it’s a system meant to annotate text. Just as we can use HTML tags to wrap our content and give it meaning, so can XML tags be used to describe data, such as the content of a file.</li>
+        <li>Unlike canvas, images created with SVG are available via the DOM. This enables technologies such as screen readers to see what’s present in an SVG object through its DOM node, as well as allowing you to inspect SVG using your browser’s developer tools. Since SVG is an XML file format, it’s also more accessible to search engines than canvas.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+            <circle cx="50" cy="50" r="25" fill="red"/>
+        </svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 400">
+            <desc>Drawing a rectangle</desc>
+                <rect x="10" y="10" width="100" height="100"  
+                    fill="blue" stroke="red" stroke-width="3"  />  
+            
+        </svg></li>
+        <li>To save ourselves some work (and sanity), instead of creating SVG images by hand, we can use an image editor to help. One open source tool that you can use to make SVG images is Inkscape, which is available for download athttp://inkscape.org/.</li>
+        <li>A good resource to know about for public domain images ishttp://openclipart.org/, where you can find images that are free to use and free of copyright. </li>
+        <li>A safer approach would be to avoid using filters, and instead modify the color of the original image. We can do this in Inkscape by selecting the three arrows in the spinner.svg image, and then selecting Object > Fill and Stroke. The Fill and Stroke menu will appear on the right-hand side of the screen</li>
+        <li>Raphaëlis an open-source JavaScript library that makes drawing and animating with SVG much easier.</li>
     </ol>
 
         <h3>W08 Projects</h3>
-        <a href="/week7/project.html">Click Here for W08 Project</a>Click here for W07 todo list project.</a>
+        <a href="/week8/project.html">Click Here for W08 Project</a>Click here for W07 todo list project.</a>
         
 
         <h3>W08 Team Activity</h3>
