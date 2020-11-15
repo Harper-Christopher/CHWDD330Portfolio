@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 330 Portfolio</title>
+        <link rel="stylesheet" href="css/small.css">
+    </head>
+    <body onload="refreshWeeks()">
+        <h1>WDD 330 Portfolio</h1>
+        <h2>Week09</h1>
+        <ol id="weeks"> 
+            <li>If you don’t know the name of the global object, you can also refer to it using the keyword this in the global scope. The following code provides a quick way of assigning the variable global to the global object: from within the global scope const global = this;</li>
+            <li>x = 6;  // global variable created
+                 6
+                window.x // same variable can be accessed as a property of the window object
+                 6
+                // both variables are exactly the same
+                window.x === x;
+                 true</li>
+                 <li>you should refer to global variables without using the window object; it’s less typing and your code will be more portable between environments. An exception is if you need to check whether a global variable has been defined.</li>
+            <li>ES6 made parseInt() and isNaN() methods of the Number object, so they can be both be called using the following code: Number.parseInt(4.2);
+                 4
+                Number.isNaN(4.2);
+                 false</li>
+                 <li>The window.confirm() method will stop the execution of the program and display a confirmation dialog that shows the message provided as an argument, and giving the options of OK or Cancel. It returns the boolean values of true if the user clicks OK, and false if the user clicks Cancel</li>
+                <li>window.confirm('Do you wish to continue?');
+                     undefined</li>
+                     <li>The window.prompt() method will stop the execution of the program. It displays a dialog that shows a message provided as an argument, as well as an input field that allows the user to enter text. This text is then returned as a string when the user clicks OK. If the user clicks Cancel, null is returned</li>
+                     <li>The window.history property can be used to access information about any previously visited pages in the current browser session. Avoid confusing this with the new HTML5 History API.</li>
+                     <li>The window.history.length property shows how many pages have been visited before arriving at the current page.</li>
+                     <li>The window.history.go() method can be used to go to a specific page, where 0 is the current page</li>
+                     <li>There are also the window.history.forward() and window.history.back() methods that can be used to navigate forwards and backwards by one page respectively, just like using the browser’s forward and back buttons.</li>
+                     <li>The window.screen object contains information about the screen the browser is displayed on. You can find out the height and width of the screen in pixels using the height and width properties respectively</li>
+                     <li>window.screen.height
+                         1024
+                        window.screen.width
+                         1280</li>
+                    <li>The availHeight and availWidth can be used to find the height and width of the screen, excluding any operating system menus</li>
+                    <li>The write() method simply writes a string of text to the page. If a page has already loaded, it will completely replace the current docum
+                    <li>The use of document.write() is heavily frowned upon as it can only be realistically used by mixing JavaScript within an HTML document. There are still some extremely rare legitimate uses of it, but a ninja programmer will hardly ever need to use it.</li>
+                    <li>Cookies can be used for personalizing a user’s browsing experience, storing user preferences, keeping track of user choices (such as a shopping cart), authentication and tracking users. The use of cookies for tracking purposes has been much maligned in recent years. Their use for data storage is starting to be replaced in many cases by the new HTML5 localStorage API as it allows more data to be stored. </li>
+                    <li>Cookies are still useful for retaining state information (such as if a user is logged in) because they’re passed between the client and server on every HTTP request.</li>
+                    <li>Cookies take the form of a text file that contain a list of name/value pairs separated by semicolons. For example, a cookie file might contain the following information</li>
+                    <li>"name=Superman; hero=true; city=Metropolis"</li>
+                    <li>To create a cookie, you assign it to JavaScript’s “cookie jar”, using the document.cookie property</li>
+                    <li>A cookie’s value can be changed by reassigning it to document.cookie using the same name but a different value.</li>
+                    <li>To see the current contents of the cookie jar, simply enter document.cookie</li>
+                    <li>Adding the string ; secure to the end of a cookie will ensure it’s only transmitted over a secure HTTPS network</li>
+                    <li>To remove a cookie, you need to set it to expire at a time in the past = document.cookie = 'name=Batman; expires=Thu, 01 Jan 1970 00:00:01 GMT';</li>
+                    <li>The window.setTimeout() method accepts a callback to a function as its first parameter and a number of milliseconds as its second parameter. </li>
+                    <li>The setTimeOut() and setInterval() methods can be used to animate elements on a web page. As an example, let’s create a web page that shows a colored square, and make it rotate</li>
+                    <li>An audio clip can be inserted into a page with the < audio > tag, using the src attribute to point to the audio file</li>
+                    <li>A video clip can be inserted with the < video > tag, using the src attribute to point to the movie file</li>
+                    <li>Any content inside the < audio > or < video > tags will only display if the browser does not support them; hence, it can be used to display a message to users of older browsers without support for these features. The controls attribute can be added (without any value) and will display the browser’s native controls, such as play, pause, and volume control, as can be seen in the screenshot below.</li>
+                    <li>The play() method will start the clip playing from its current position</li>
+                    <li>The loop property is a boolean value that can be set to true to make the clip repeat in a loop</li>
+            </ol>
+    
+    <h3>Questions:</h3>
+    <ol>
+        <li>The reading had a TON of things I've never known with so many preset objects I never know about to our team project with audio on the drums. I don't have any specific questions but more broad questions that require research on how people use all these objects and API's on a day to day basis.</li>
+    </ol>
+
+        <h3>W09 Projects</h3>
+        <a href="/week9/animation.html">Click Here for W09 Project</a>
+        
+
+        <h3>W08 Team Activity</h3>
+        <a href="team_project.html">Click Here for W09 Team Activity</a>
+        <script src="js/main.js"></script>    
+    </body>  
+</html>
