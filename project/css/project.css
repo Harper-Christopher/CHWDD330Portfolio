@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    margin: 1rem;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 400px;
+    height: 100%;
+}
+
+.result img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: lightskyblue;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+}
+
+h1, h2 {
+    color: lightskyblue;
+}
+
+li {
+    color: white;
+}
+
+legend {
+    color: lightskyblue;
+}
+
+#fox_result {
+    width: 80%;
+    height: 300px;
+}
+
+p {
+    color: white;
+}
+
+fieldset {
+    width: 75%;
+}
+
+img {
+    border-radius: .5rem;
+    animation-duration: 1.5s;
+    animation-name: scaleIn;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      width: 5%; 
+      height: 5%;
+    }
+  
+    to {
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  input {
+      width: 60%;
+  }
+
+  input:hover {
+      border: 2px solid lightskyblue;
+  }
+
+  .newFacts {
+      display: flex;
+  }
+
+  .trashButton {
+      margin-left: 10px;
+  }
+
+  .fact {
+      margin: 1rem auto;
+      animation: fadeIn ease 3s;
+  }
+
+  @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+  }

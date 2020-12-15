@@ -136,6 +136,7 @@ function getTodos () {
     });
 }
 
+
 // Function to remove our local storage data from our array when we are deleting individual lines. 
 function removeLocalTasks(todo) {
     let todos;
