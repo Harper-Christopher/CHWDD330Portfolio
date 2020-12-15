@@ -52,22 +52,13 @@ const links = [
         {
             label: "Week11 Notes",
             url: "week11/index.html",
-        }/*
-        ,
-        {
-            label: "Week12 Notes",
-            url: "week12/index.html",
         }
         ,
         {
-            label: "Week13 Notes",
-            url: "week13/index.html",
+            label: "Final Project",
+            url: "project/project.html",
         }
-        ,
-        {
-            label: "Week14 Notes",
-            url: "week14/index.html",
-        }*/
+        
 
     ]
 
